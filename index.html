@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Image Gallery.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="Image Gallery.png" alt="logo" width="40px" height="40px"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to the Image Gallery</h1>
+        <p id="element">Explore beautiful photos captured from around the world.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi veniam saepe placeat harum nobis amet voluptates eligendi aspernatur quae unde, illum explicabo repellat ducimus autem suscipit quasi optio dicta non facilis esse odit blanditiis ipsam quas? Quas repudiandae laboriosam ipsam cupiditate consequatur, temporibus libero fugiat natus aliquam, ipsa dolor!p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 style="text-align: center;">Our Gallery</h2>
+        <div class="grid-container">
+            <img src="image1.avif" alt="Image 1">
+            <img src="image2.avif" alt="Image 2">
+            <img src="image3.avif" alt="Image 3">
+            <img src="image4.avif" alt="Image 4">
+            <img src="image5.avif" alt="Image 5">
+            <img src="image6.avif" alt="Image 6">
+            <img src="image7.avif" alt="Image 7">
+            <img src="image8.avif" alt="Image 8">
+            <img src="image9.avif" alt="Image 9">
+            <img src="image10.avif" alt="Image 10">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ImageGallery. All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ["Explore beautiful photos captured from around the world.","Nature photos","Water fall","Mountains","Beaches"],
+      typeSpeed: 100,
+    });
+  </script>
+</html>
